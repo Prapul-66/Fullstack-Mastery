@@ -1,0 +1,78 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light background */
+    color: #333333; /* Dark gray text for readability */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .home-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #1e88e5; /* Attractive blue */
+  }
+  
+  .home-container p {
+    font-size: 20px;
+    max-width: 900px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555555; /* Slightly faded gray for text */
+  }
+  
+  .home-container h3 {
+    font-size: 26px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #ff9800; /* Warm orange for emphasis */
+  }
+  
+  .home-container .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background: #1e88e5; /* Blue button matching the header */
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .home-container .cta-button:hover {
+    background: #1565c0; /* Slightly darker blue on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .home-container .cta-button:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .home-container h2 {
+      font-size: 36px;
+    }
+  
+    .home-container p {
+      font-size: 18px;
+    }
+  
+    .home-container .cta-button {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+/* features.css */
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f0f4f8; /* Light background for a clean and fresh look */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .features-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1e88e5; /* Blue for the header */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .features-container p {
+    font-size: 18px;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555; /* Gray color for text */
+  }
+  
+  .features-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .features-container ul li {
+    font-size: 18px;
+    margin: 15px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .features-container ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff9800; /* Orange color for checkmarks */
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .features-container ul li strong {
+    font-weight: 600;
+    color: #1e88e5; /* Blue color for strong text */
+  }
+  
+  /* Remove hover effect - No changes on hover */
+  

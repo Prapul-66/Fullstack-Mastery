@@ -1,0 +1,102 @@
+/* Certification.css */
+.certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f4f7fb; /* Light background for clarity */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .certification-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e88e5; /* Blue color for the main header */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #1e88e5, #ff9800); /* Gradient effect */
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .certification-container h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #1e88e5; /* Blue color for subheadings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .certification-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Light gray for paragraphs */
+    max-width: 800px;
+    text-align: justify; /* Justify text for better alignment */
+  }
+  
+  .certification-container p strong {
+    font-weight: 700;
+    color: #1e88e5; /* Blue color for strong text */
+  }
+  
+  .certification-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .certification-container ul li {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+    border: 1px solid #ddd; /* Add border around list items */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for the list items */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .certification-container ul li:hover {
+    background-color: #f1f1f1; /* Slightly darken background on hover */
+    transform: translateY(-5px); /* Lift the item on hover */
+  }
+  
+  .certification-container ul li::before {
+    content: "✔";
+    color: #ff9800; /* Orange checkmark for list items */
+    margin-right: 10px;
+  }
+  
+  .certification-container .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #1e88e5; /* Blue color */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .certification-container .cta-button:hover {
+    background-color: #1565c0; /* Darker blue for hover effect */
+    transform: translateY(-3px); /* Lift the button on hover */
+  }
+  
+  .certification-container .cta-button:active {
+    transform: translateY(1px); /* Button pressed effect */
+  }
+  

@@ -1,0 +1,63 @@
+/* About.css */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f9fafb; /* Light background for freshness */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e88e5; /* Blue for the header */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .about-container h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #1e88e5; /* Blue color for subheadings */
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Light gray text for paragraphs */
+    max-width: 800px;
+  }
+  
+  .about-container p strong {
+    font-weight: 700;
+    color: #1e88e5; /* Blue for emphasized text */
+  }
+  
+  .about-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .about-container ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .about-container ul li::before {
+    content: "✔";
+    color: #ff9800; /* Orange color for checkmarks */
+    margin-right: 10px;
+  }
+  

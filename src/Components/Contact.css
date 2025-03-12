@@ -1,0 +1,63 @@
+/* Contact.css */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f9fafb; /* Light background color */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e88e5; /* Blue color for the header */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact-container h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #1e88e5; /* Blue color for subheadings */
+  }
+  
+  .contact-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Light gray color for paragraphs */
+    max-width: 800px;
+  }
+  
+  .contact-container p strong {
+    font-weight: 700;
+    color: #1e88e5; /* Blue color for strong text */
+  }
+  
+  .contact-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .contact-container ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .contact-container ul li::before {
+    content: "✔";
+    color: #ff9800; /* Orange checkmark for list items */
+    margin-right: 10px;
+  }
+  

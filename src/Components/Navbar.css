@@ -1,0 +1,98 @@
+/* Enhanced Custom Navbar Styling with Gradient Background */
+.navbar-custom {
+    padding: 18px 30px; /* Slightly increased padding */
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* More vibrant gradient angle */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  .navbar-custom:hover {
+    background: linear-gradient(135deg, #6200ee, #a044ff); /* Slightly lighter gradient on hover */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 26px; /* Slightly larger brand font */
+    font-weight: 700; /* Stronger font weight */
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px; /* Add letter spacing */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: black ; /* Gold color on brand hover */
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-item {
+    margin-left: 25px; /* Adjust spacing */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600; /* Slightly bolder font weight */
+    position: relative; /* For the underline effect */
+    transition: color 0.3s ease;
+  }
+  
+  /* Underline effect on hover */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px; /* Adjust underline position */
+    left: 0;
+    background-color: black; /* Golden underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-link:hover {
+    color: black;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar-custom {
+      padding: 15px 20px; /* Adjust mobile padding */
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 0;
+      margin-bottom: 12px;
+    }
+  
+    .navbar-nav .nav-item:last-child {
+      margin-bottom: 0;
+    }
+  
+    .nav-link {
+      font-size: 17px; /* Adjust mobile link font size */
+    }
+  }
