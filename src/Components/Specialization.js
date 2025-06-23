@@ -1,65 +1,70 @@
 import React from 'react';
-import './Specialization.css'; // Import CSS for styling
+import './Specialization.css';
 
 const Specialization = () => {
   const specializations = [
     {
-      name: "Artificial Intelligence & Machine Learning (AI/ML)",
-      desc: "AI and ML involve creating intelligent systems that can learn and make decisions. Topics include neural networks, deep learning, NLP, and AI applications.",
-      icon: "🤖",
+      name: "AI & Machine Learning",
+      desc: "From self-driving cars to chatbots, dive into neural networks, deep learning, NLP, and predictive analytics that power tomorrow's tech.",
+      icon: "🧠",
     },
     {
-      name: "Web Development",
-      desc: "Learn to build responsive websites and web applications using front-end and back-end technologies like HTML, CSS, JavaScript, React, and Node.js.",
-      icon: "🌐",
+      name: "Full-Stack Web Development",
+      desc: "Master the MERN stack, responsive UI design, RESTful APIs, and scalable architectures for real-world applications.",
+      icon: "🌍",
     },
     {
-      name: "Cybersecurity",
-      desc: "Protect data and systems from cyber threats through ethical hacking, network security, cryptography, and incident response strategies.",
-      icon: "🔐",
+      name: "Cybersecurity & Ethical Hacking",
+      desc: "Learn how to defend against cyber threats with penetration testing, cryptography, and secure system design.",
+      icon: "🛡️",
     },
     {
-      name: "Cloud Computing & DevOps",
-      desc: "Master cloud platforms (AWS, Azure), containerization (Docker, Kubernetes), and automation with CI/CD pipelines and infrastructure as code.",
+      name: "Cloud Engineering & DevOps",
+      desc: "Deploy and scale applications using AWS, Azure, Docker, Kubernetes, and CI/CD pipelines with best practices.",
       icon: "☁️",
     },
     {
-      name: "Blockchain Development",
-      desc: "Understand decentralized applications, smart contracts, cryptocurrencies, and secure transactions using blockchain frameworks.",
-      icon: "⛓️",
+      name: "Blockchain & Web3",
+      desc: "Build decentralized apps, smart contracts, and explore token economies in the rapidly growing blockchain ecosystem.",
+      icon: "🔗",
     },
     {
-      name: "Data Science & Big Data",
-      desc: "Analyze large datasets using data visualization, machine learning models, Hadoop, and AI-driven analytics.",
-      icon: "📊",
+      name: "Data Science & Analytics",
+      desc: "Turn data into decisions with Python, pandas, machine learning, and tools like Tableau and Power BI.",
+      icon: "📈",
     },
     {
-      name: "Game Development",
-      desc: "Create immersive gaming experiences using Unity, Unreal Engine, graphics programming, and AI in games.",
+      name: "Game Design & Development",
+      desc: "Create captivating game mechanics using Unity, Unreal Engine, physics simulation, and AI-driven storytelling.",
       icon: "🎮",
     },
     {
-      name: "Embedded Systems & IoT",
-      desc: "Learn about microcontrollers, sensor networks, IoT security, and smart automation solutions.",
-      icon: "📡",
+      name: "IoT & Embedded Systems",
+      desc: "Explore sensor-driven automation, embedded C, and smart devices for industries and smart homes.",
+      icon: "🔌",
     },
     {
       name: "Mobile App Development",
-      desc: "Develop native and cross-platform mobile applications using Swift, Kotlin, Flutter, and React Native.",
-      icon: "📱",
+      desc: "Build elegant, high-performance mobile apps with Flutter, React Native, Swift, and Kotlin.",
+      icon: "📲",
     },
     {
-      name: "Software Engineering Principles",
-      desc: "Gain expertise in software development lifecycle, design patterns, Agile methodologies, and software testing.",
-      icon: "💻",
+      name: "Software Architecture & Agile",
+      desc: "Design enterprise-grade systems, apply design patterns, version control, and agile SDLC methodologies.",
+      icon: "🧩",
     },
   ];
 
   return (
     <div className="specialization-container">
-      <h1>Specializations in Computer Science</h1>
-      <p>Explore different specializations and choose the one that aligns with your career goals.</p>
-      <div className="specialization-list">
+      <header className="specialization-hero">
+        <h1>🌟 Explore Your Specialization</h1>
+        <p>
+          Choose a path that excites you and aligns with your passion. Each specialization is crafted to help you build expertise in modern technologies.
+        </p>
+      </header>
+
+      <div className="specialization-grid">
         {specializations.map((spec, index) => (
           <div key={index} className="specialization-card">
             <h2>{spec.icon} {spec.name}</h2>

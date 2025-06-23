@@ -1,63 +1,96 @@
-/* About.css */
+/* Container Layout */
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    background-color: #f9fafb; /* Light background for freshness */
-    color: #333; /* Dark text for readability */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+/* Headings */
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-container h3 {
+  font-size: 1.75rem;
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.about-container p {
+  font-size: 1.05rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Section Boxes */
+.about-container section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-container section:hover {
+  transform: translateY(-4px);
+}
+
+/* Lists */
+.about-container ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1.5rem;
+}
+
+.about-container li {
+  font-size: 1.05rem;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #5b21b6;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .about-container h2 {
-    font-size: 42px;
-    font-weight: bold;
-    color: #1e88e5; /* Blue for the header */
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    font-size: 2rem;
   }
-  
+
   .about-container h3 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 30px;
-    color: #1e88e5; /* Blue color for subheadings */
+    font-size: 1.5rem;
   }
-  
-  .about-container p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555; /* Light gray text for paragraphs */
-    max-width: 800px;
+
+  .about-container p,
+  .about-container li {
+    font-size: 1rem;
   }
-  
-  .about-container p strong {
-    font-weight: 700;
-    color: #1e88e5; /* Blue for emphasized text */
+
+  .about-container section {
+    padding: 1.5rem;
   }
-  
-  .about-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 800px;
-    text-align: left;
-  }
-  
-  .about-container ul li {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .about-container ul li::before {
-    content: "✔";
-    color: #ff9800; /* Orange color for checkmarks */
-    margin-right: 10px;
-  }
-  
+}

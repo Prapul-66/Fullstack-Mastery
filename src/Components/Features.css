@@ -1,64 +1,75 @@
-/* features.css */
+/* Container Layout */
 .features-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    background-color: #f0f4f8; /* Light background for a clean and fresh look */
-    color: #333; /* Dark text for readability */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+/* Heading */
+.features-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+/* Intro Paragraph */
+.features-container > p {
+  font-size: 1.1rem;
+  color: #475569;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature Sections */
+.features-container section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.features-container section:hover {
+  transform: translateY(-4px);
+}
+
+/* Section Headings */
+.features-container h4 {
+  font-size: 1.5rem;
+  color: #7c3aed;
+  margin-bottom: 0.75rem;
+}
+
+/* Section Paragraphs */
+.features-container section p {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .features-container h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1e88e5; /* Blue for the header */
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    font-size: 2rem;
   }
-  
-  .features-container p {
-    font-size: 18px;
-    max-width: 800px;
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #555; /* Gray color for text */
+
+  .features-container h4 {
+    font-size: 1.25rem;
   }
-  
-  .features-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 900px;
+
+  .features-container section {
+    padding: 1.5rem;
   }
-  
-  .features-container ul li {
-    font-size: 18px;
-    margin: 15px 0;
-    padding-left: 30px;
-    position: relative;
-    color: #333;
-    line-height: 1.6;
+
+  .features-container > p {
+    font-size: 1rem;
   }
-  
-  .features-container ul li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #ff9800; /* Orange color for checkmarks */
-    font-size: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .features-container ul li strong {
-    font-weight: 600;
-    color: #1e88e5; /* Blue color for strong text */
-  }
-  
-  /* Remove hover effect - No changes on hover */
-  
+}

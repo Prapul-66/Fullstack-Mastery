@@ -1,63 +1,114 @@
-/* Contact.css */
+/* Container Layout */
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    background-color: #f9fafb; /* Light background color */
-    color: #333; /* Dark text for readability */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+/* Headings */
+.contact-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container h3 {
+  font-size: 1.75rem;
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.contact-container p {
+  font-size: 1.05rem;
+  color: #475569;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Sections */
+.contact-container section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-container section:hover {
+  transform: translateY(-4px);
+}
+
+/* Lists */
+.contact-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-container li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+.contact-container li::before {
+  content: "✔";
+  color: #14b8a6;
+  margin-right: 0.6rem;
+}
+
+/* Links */
+.contact-container a {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-container a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+/* Call to Action */
+.cta-wrap {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #5b21b6;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .contact-container h2 {
-    font-size: 42px;
-    font-weight: bold;
-    color: #1e88e5; /* Blue color for the header */
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    font-size: 2rem;
   }
-  
+
   .contact-container h3 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 30px;
-    color: #1e88e5; /* Blue color for subheadings */
+    font-size: 1.5rem;
   }
-  
-  .contact-container p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555; /* Light gray color for paragraphs */
-    max-width: 800px;
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
   }
-  
-  .contact-container p strong {
-    font-weight: 700;
-    color: #1e88e5; /* Blue color for strong text */
-  }
-  
-  .contact-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 800px;
-    text-align: left;
-  }
-  
-  .contact-container ul li {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .contact-container ul li::before {
-    content: "✔";
-    color: #ff9800; /* Orange checkmark for list items */
-    margin-right: 10px;
-  }
-  
+}
